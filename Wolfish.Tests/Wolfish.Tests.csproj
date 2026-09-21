@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="..\Wolfish.Maia\Lists\TerminalCommands.json">
+    <None Update="..\Wolfish.Maia\TerminalCommands.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Link>Lists\TerminalCommands.json</Link>
+      <Link>.\TerminalCommands.json</Link>
     </None>
   </ItemGroup>
 

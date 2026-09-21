@@ -18,7 +18,7 @@ maia ask <agente> <texto...> → "Burst" (3+ args) — AskCommand via CommandReg
 
 ### Como adicionar um novo comando Clean Shot
 
-1. Adicione uma entrada em `Wolfish.Maia/Lists/TerminalCommands.json` (e variantes Linux/Windows)
+1. Adicione uma entrada em `Wolfish.Maia/TerminalCommands.json` (e variantes Linux/Windows)
 2. O `WolfishCommand.SeekAndExecute()` resolve automaticamente
 
 ## Configuração de Agentes

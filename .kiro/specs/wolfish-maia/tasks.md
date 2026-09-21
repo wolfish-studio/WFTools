@@ -31,7 +31,7 @@ Plano de implementação para consolidar, robustecer e testar o Wolfish.Maia. As
   - [ ] 3.2 Confirmar que `TerminalCommands.Linux.json` e `TerminalCommands.Windows.json` estão populados com comandos relevantes
   - [ ] 3.3 Usar `RuntimeInformation.IsOSPlatform(OSPlatform.Windows)` para detecção de plataforma
   - [ ]* 3.4 Adicionar testes de integração básicos para os Clean Shots mais comuns (opcional)
-  - Arquivos afetados: `Wolfish.Commands/WolfishCommand.cs`, `Wolfish.Maia/Lists/TerminalCommands.Linux.json`, `Wolfish.Maia/Lists/TerminalCommands.Windows.json`
+  - Arquivos afetados: `Wolfish.Commands/WolfishCommand.cs`, `Wolfish.Maia/TerminalCommands.Linux.json`, `Wolfish.Maia/TerminalCommands.Windows.json`
   - _Requirements: 1.3, 5.2, 5.3, 5.4_
 
 - [ ] 4. Templates de Configuração Seguros

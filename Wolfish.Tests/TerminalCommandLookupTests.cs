@@ -15,7 +15,7 @@ namespace Wolfish.Tests
         /// Caminho para o TerminalCommands.json copiado para o output.
         /// </summary>
         private static readonly string JsonPath = Path.Combine(
-            AppContext.BaseDirectory, "Lists", "TerminalCommands.json");
+            AppContext.BaseDirectory, "TerminalCommands.json");
 
         // ═══════════════════════════════════════════════════════════════
         //  Validação de carregamento do JSON

@@ -120,8 +120,7 @@ Wolfish.Maia/
 │   │   └── ConfigCommand.cs
 │   └── BurstCommands/
 │       └── AskCommand.cs
-└── Lists/
-    ├── TerminalCommands.json
+└── Examples/
     ├── TerminalCommands.Linux.json
     ├── TerminalCommands.Windows.json
     ├── AgentCommands.json

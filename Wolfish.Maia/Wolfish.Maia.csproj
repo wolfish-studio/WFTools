@@ -54,19 +54,19 @@
     <None Update="cloudagents.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Lists\TerminalCommands.json">
+    <None Update="TerminalCommands.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Lists\TerminalCommands.Linux.json">
+    <None Update="Examples\TerminalCommands.Linux.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Lists\AgentCommands.json">
+    <None Update="Examples\AgentCommands.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Lists\AutomatedScripts.json">
+    <None Update="Examples\AutomatedScripts.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Lists\TerminalCommands..Windows.json">
+    <None Update="Examples\TerminalCommands..Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

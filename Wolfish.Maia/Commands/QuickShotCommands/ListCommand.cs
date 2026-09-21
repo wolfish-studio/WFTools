@@ -9,7 +9,7 @@ namespace Wolfish.Maia.Commands
         public Task ExecuteAsync(string[] args)
         {
             var baseDirectory = AppContext.BaseDirectory;
-            var terminalCommand = new WolfishCommand($"{baseDirectory}Lists/TerminalCommands.json");
+            var terminalCommand = new WolfishCommand($"{baseDirectory}TerminalCommands.json");
             var commandList = terminalCommand.LoadFromJson();
             var commandTable = terminalCommand.BuildLimidetTable(commandList);
             Console.WriteLine(commandTable);

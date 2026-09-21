@@ -9,7 +9,7 @@ namespace Wolfish.Maia
         {
             var found = false;
             var baseDirectory = AppContext.BaseDirectory;
-            var terminalCommand = new WolfishCommand($"{baseDirectory}Lists/TerminalCommands.json");
+            var terminalCommand = new WolfishCommand($"{baseDirectory}TerminalCommands.json");
             var commandRegistry = CommandRegistry.CreateDefault();
 
             //args = ["welcome"];

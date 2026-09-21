@@ -15,7 +15,7 @@ namespace Wolfish.Maia.Commands
         [
             "appsettings.json",
             "cloudagents.json",
-            "Lists/TerminalCommands.json"
+            "TerminalCommands.json"
         ];
 
         public Task ExecuteAsync(string[] args)

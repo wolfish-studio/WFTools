@@ -170,7 +170,7 @@ Para adicionar novos comandos ao Maia, basta:
 2. Registre em `CommandRegistry.CreateDefault()`
 
 **Clean Shot** (2 argumentos):
-1. Adicione uma entrada em `Lists/TerminalCommands.json` (e variante Linux/Windows)
+1. Adicione uma entrada em `TerminalCommands.json` (e variante Linux/Windows)
 
 ---
 

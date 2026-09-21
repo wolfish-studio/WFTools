@@ -23,7 +23,7 @@ namespace Wolfish.IntegrationTests
         /// </summary>
         private static async Task<(int ExitCode, string Stdout, string Stderr)> RunMaiaAsync(params string[] args)
         {
-            var arguments = $"run --project \"{MaiaProjectPath}\" --framework net10.0 -- {string.Join(" ", args)}";
+            var arguments = $"run --project \"{MaiaProjectPath}\" --framework net11.0 --no-build -- {string.Join(" ", args)}";
 
             var startInfo = new ProcessStartInfo
             {
@@ -31,6 +31,7 @@ namespace Wolfish.IntegrationTests
                 Arguments = arguments,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
+                RedirectStandardInput = true,
                 UseShellExecute = false,
                 CreateNoWindow = true,
                 StandardOutputEncoding = Encoding.UTF8,
@@ -51,6 +52,11 @@ namespace Wolfish.IntegrationTests
             };
 
             process.Start();
+            
+            // Fornece um input padrão ("N\n") para comandos que possam ficar bloqueados aguardando Console.ReadLine()
+            await process.StandardInput.WriteLineAsync("N");
+            process.StandardInput.Close();
+
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
 
