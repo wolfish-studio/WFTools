@@ -27,6 +27,9 @@ jobs:
       - name: Restaurar dependências
         run: dotnet restore
 
+      - name: Executar Testes
+        run: dotnet test Wolfish.Tests/Wolfish.Tests.csproj -c Release --verbosity normal
+
       - name: Criar Pacote (Pack)
         run: dotnet pack Wolfish.Maia/Wolfish.Maia.csproj -c Release --output ./nupkg
 
