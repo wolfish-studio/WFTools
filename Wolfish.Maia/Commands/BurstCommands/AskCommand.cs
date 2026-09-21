@@ -125,7 +125,7 @@ namespace Wolfish.Maia.Commands
 
         private static CloudAgent? SearchAgentByName(string agentName, List<CloudAgent>? allAgents)
         {
-            var selectedAgent = allAgents?.FirstOrDefault(c => c.Name.Equals(agentName, StringComparison.OrdinalIgnoreCase));
+            var selectedAgent = allAgents?.FirstOrDefault(c => string.Equals(c.Name, agentName, StringComparison.OrdinalIgnoreCase));
             if (selectedAgent is null) return null;
             return selectedAgent;
         }
@@ -157,7 +157,7 @@ namespace Wolfish.Maia.Commands
             config.GetSection("LLMProviders").Bind(providers);
             var allProviders = config.GetSection("LLMProviders").Get<List<LlmProvider>>();
 
-            var selectedProvider = allProviders?.FirstOrDefault(c => c.Name.Equals(providerName, StringComparison.OrdinalIgnoreCase));
+            var selectedProvider = allProviders?.FirstOrDefault(c => string.Equals(c.Name, providerName, StringComparison.OrdinalIgnoreCase));
             if (selectedProvider is null) return null;
             return selectedProvider;
         }
