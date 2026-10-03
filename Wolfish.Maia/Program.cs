@@ -31,7 +31,7 @@ namespace Wolfish.Maia
             if (args.Length == 0) { await commandRegistry.TryExecuteAsync("help", args); return; }
 
             //quick shots tiro rapido
-            if (args.Length == 1) { found = await commandRegistry.TryExecuteAsync(args[0], args); }
+            if (args.Length >= 1) { found = await commandRegistry.TryExecuteAsync(args[0], args); }
 
             //clean shots tiro certeiro
             if (!found && args.Length == 2) { found = await terminalCommand.SeekAndExecute(args[0], args[1]); }

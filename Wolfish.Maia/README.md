@@ -185,3 +185,68 @@ Para adicionar novos comandos ao Maia, basta:
 ## Licença
 
 MIT — veja [LICENSE.txt](../LICENSE.txt).
+
+---
+
+
+## Gerenciamento de Providers
+
+### Listar providers configurados
+
+```bash
+maia provider list
+```
+
+Mostra todos os providers em `appsettings.json` com status da API key.
+
+### Adicionar um novo provider
+
+```bash
+maia provider add
+```
+
+Modo interativo — solicita:
+- Nome do provider
+- Endpoint (URL completa da API)
+- API Key (ou deixe vazio para serviços locais)
+
+Exemplo de sessão:
+
+```
+➕ Adicionar novo Provider
+
+Nome do provider: Anthropic
+Endpoint (URL completa da API): https://api.anthropic.com/v1
+API Key (deixe vazio se não precisar): sk-ant-xxxxx
+
+✅ Provider 'Anthropic' adicionado com sucesso!
+```
+
+### Editar um provider existente
+
+```bash
+maia provider edit
+```
+
+Lista os providers disponíveis e permite escolher por número ou nome. Depois edita endpoint e/ou API key.
+
+Exemplo:
+
+```
+✏️  Editar Provider
+
+  [1] Gemini
+  [2] OpenRouter
+  [3] LMStudio
+
+Escolha o número do provider (ou nome): 2
+
+Editando: OpenRouter
+
+Endpoint [https://openrouter.ai/api/v1]:
+API Key [pressione Enter para manter a atual]: sk-or-v1-nova-chave-aqui
+
+✅ Provider 'OpenRouter' atualizado com sucesso!
+```
+
+---

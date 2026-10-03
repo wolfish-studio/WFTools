@@ -48,6 +48,7 @@ namespace Wolfish.Maia.Commands
                     .Register(new HomeCommand())
                     .Register(new HelpCommand())
                     .Register(new InfoCommand())
+                    .Register(new ProviderCommand())
                     .Register(new AskCommand());
 
             return registry;
